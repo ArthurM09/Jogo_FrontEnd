@@ -1,0 +1,76 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%; /* Responsivo */
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Centralizar o título */
+  }
+  
+  #dica {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 30px;
+    text-align: center; /* Centralizar a dica */
+    display: none;
+  }
+
+  #dica.mostrar { /* Estilos para a dica visível */
+    display: block; /* Exibe a dica */
+  }
+  
+  #palavra {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 1.1rem;
+    width: 250px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #verificar {
+    padding: 15px 30px;
+    background-color: black; /* Verde vibrante */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  #verificar:hover {
+    background-color: rgb(63, 61, 61); /* Verde mais escuro no hover */
+  }
+  
+  #resultado {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #resultado.correto { /* Classe para resultado correto */
+    color: #4CAF50;
+  }
+  
+  #resultado.errado { /* Classe para resultado errado */
+    color: #f44336;
+  }
